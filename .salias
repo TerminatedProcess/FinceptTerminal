@@ -1,0 +1,4 @@
+clear
+
+# Sync fork from upstream (Fincept-Corporation) and push to origin (your fork)
+alias gitupdate='git remote get-url upstream &>/dev/null || git remote add upstream https://github.com/Fincept-Corporation/FinceptTerminal.git; git fetch upstream && git checkout main && git merge upstream/main && git push origin main'
